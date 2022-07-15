@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7028A4F228801049009BFF42 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7028A4F128801049009BFF42 /* SwiftyJSON */; };
 		70C654EA287E921900EAF09E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C654E9287E921900EAF09E /* AppDelegate.swift */; };
 		70C654EC287E921900EAF09E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C654EB287E921900EAF09E /* SceneDelegate.swift */; };
-		70C654EE287E921900EAF09E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C654ED287E921900EAF09E /* ViewController.swift */; };
+		70C654EE287E921900EAF09E /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C654ED287E921900EAF09E /* StoreView.swift */; };
 		70C654F1287E921900EAF09E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C654EF287E921900EAF09E /* Main.storyboard */; };
 		70C654F3287E921C00EAF09E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C654F2287E921C00EAF09E /* Assets.xcassets */; };
 		70C654F6287E921C00EAF09E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C654F4287E921C00EAF09E /* LaunchScreen.storyboard */; };
 		70C65501287E921C00EAF09E /* Fake_StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C65500287E921C00EAF09E /* Fake_StoreTests.swift */; };
 		70C6550B287E921C00EAF09E /* Fake_StoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C6550A287E921C00EAF09E /* Fake_StoreUITests.swift */; };
 		70C6550D287E921C00EAF09E /* Fake_StoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C6550C287E921C00EAF09E /* Fake_StoreUITestsLaunchTests.swift */; };
+		70C6551C287E92E000EAF09E /* StorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C6551B287E92E000EAF09E /* StorePresenter.swift */; };
+		70C6551E287E92E600EAF09E /* StoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C6551D287E92E600EAF09E /* StoreInteractor.swift */; };
+		70C65520287E92F100EAF09E /* StoreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C6551F287E92F100EAF09E /* StoreEntity.swift */; };
+		70C65522287E92F600EAF09E /* StoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C65521287E92F600EAF09E /* StoreRouter.swift */; };
+		70C65524287E9C0300EAF09E /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C65523287E9C0300EAF09E /* ProductCollectionViewCell.swift */; };
+		70C65526287EAF9C00EAF09E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C65525287EAF9C00EAF09E /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,7 @@
 		70C654E6287E921900EAF09E /* Fake Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fake Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C654E9287E921900EAF09E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70C654EB287E921900EAF09E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		70C654ED287E921900EAF09E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70C654ED287E921900EAF09E /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		70C654F0287E921900EAF09E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70C654F2287E921C00EAF09E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70C654F5287E921C00EAF09E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,12 @@
 		70C65506287E921C00EAF09E /* Fake StoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fake StoreUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C6550A287E921C00EAF09E /* Fake_StoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fake_StoreUITests.swift; sourceTree = "<group>"; };
 		70C6550C287E921C00EAF09E /* Fake_StoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fake_StoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70C6551B287E92E000EAF09E /* StorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePresenter.swift; sourceTree = "<group>"; };
+		70C6551D287E92E600EAF09E /* StoreInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInteractor.swift; sourceTree = "<group>"; };
+		70C6551F287E92F100EAF09E /* StoreEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEntity.swift; sourceTree = "<group>"; };
+		70C65521287E92F600EAF09E /* StoreRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRouter.swift; sourceTree = "<group>"; };
+		70C65523287E9C0300EAF09E /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		70C65525287EAF9C00EAF09E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7028A4F228801049009BFF42 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70209C05288125410071C695 /* Assets & Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				70C654EF287E921900EAF09E /* Main.storyboard */,
+				70C654F2287E921C00EAF09E /* Assets.xcassets */,
+				70C654F4287E921C00EAF09E /* LaunchScreen.storyboard */,
+			);
+			path = "Assets & Storyboard";
+			sourceTree = "<group>";
+		};
 		70C654DD287E921900EAF09E = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +123,10 @@
 		70C654E8287E921900EAF09E /* Fake Store */ = {
 			isa = PBXGroup;
 			children = (
-				70C654E9287E921900EAF09E /* AppDelegate.swift */,
-				70C654EB287E921900EAF09E /* SceneDelegate.swift */,
-				70C654ED287E921900EAF09E /* ViewController.swift */,
-				70C654EF287E921900EAF09E /* Main.storyboard */,
-				70C654F2287E921C00EAF09E /* Assets.xcassets */,
-				70C654F4287E921C00EAF09E /* LaunchScreen.storyboard */,
+				70C65519287E922C00EAF09E /* Essential */,
+				70C6551A287E92CC00EAF09E /* Main */,
+				70C65525287EAF9C00EAF09E /* Extension.swift */,
+				70209C05288125410071C695 /* Assets & Storyboard */,
 				70C654F7287E921C00EAF09E /* Info.plist */,
 			);
 			path = "Fake Store";
@@ -127,6 +149,28 @@
 			path = "Fake StoreUITests";
 			sourceTree = "<group>";
 		};
+		70C65519287E922C00EAF09E /* Essential */ = {
+			isa = PBXGroup;
+			children = (
+				70C654E9287E921900EAF09E /* AppDelegate.swift */,
+				70C654EB287E921900EAF09E /* SceneDelegate.swift */,
+			);
+			path = Essential;
+			sourceTree = "<group>";
+		};
+		70C6551A287E92CC00EAF09E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				70C654ED287E921900EAF09E /* StoreView.swift */,
+				70C65523287E9C0300EAF09E /* ProductCollectionViewCell.swift */,
+				70C6551B287E92E000EAF09E /* StorePresenter.swift */,
+				70C6551D287E92E600EAF09E /* StoreInteractor.swift */,
+				70C6551F287E92F100EAF09E /* StoreEntity.swift */,
+				70C65521287E92F600EAF09E /* StoreRouter.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +187,9 @@
 			dependencies = (
 			);
 			name = "Fake Store";
+			packageProductDependencies = (
+				7028A4F128801049009BFF42 /* SwiftyJSON */,
+			);
 			productName = "Fake Store";
 			productReference = 70C654E6287E921900EAF09E /* Fake Store.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 70C654DD287E921900EAF09E;
+			packageReferences = (
+				7028A4F028801049009BFF42 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 70C654E7287E921900EAF09E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70C654EE287E921900EAF09E /* ViewController.swift in Sources */,
+				70C65526287EAF9C00EAF09E /* Extension.swift in Sources */,
+				70C65520287E92F100EAF09E /* StoreEntity.swift in Sources */,
+				70C6551C287E92E000EAF09E /* StorePresenter.swift in Sources */,
+				70C65524287E9C0300EAF09E /* ProductCollectionViewCell.swift in Sources */,
+				70C654EE287E921900EAF09E /* StoreView.swift in Sources */,
 				70C654EA287E921900EAF09E /* AppDelegate.swift in Sources */,
+				70C6551E287E92E600EAF09E /* StoreInteractor.swift in Sources */,
 				70C654EC287E921900EAF09E /* SceneDelegate.swift in Sources */,
+				70C65522287E92F600EAF09E /* StoreRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -443,6 +499,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,7 +511,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,6 +528,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,7 +540,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -602,6 +660,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7028A4F028801049009BFF42 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7028A4F128801049009BFF42 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7028A4F028801049009BFF42 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 70C654DE287E921900EAF09E /* Project object */;
 }

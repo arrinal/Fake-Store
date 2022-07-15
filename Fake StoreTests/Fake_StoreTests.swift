@@ -10,27 +10,25 @@ import XCTest
 
 class Fake_StoreTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    var presenter: StorePresenterProtocolInput = StorePresenter()
+    var interactor: StoreInteractorProtocol = StoreInteractor()
+    
+    override func setUp() {
+        super.setUp()
+        
+        presenter.interactor = interactor
+        
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func test() {
+        
+        interactor.productData = [ProductData(id: 1, title: "Backpack", price: 30, description: "Lorem Ipsum dolor", image: "", rating: "4"), ProductData(id: 2, title: "Tshirt", price: 20, description: "Sit amet", image: "", rating: "5")]
+        interactor.isPaginating = false
+        
+        XCTAssertNotNil(presenter.getData)
+        XCTAssertNotNil(presenter.getPaginatingStatus())
+        XCTAssertEqual(presenter.getData()[0].title, "Backpack")
+        XCTAssertEqual(presenter.getPaginatingStatus(), false)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
